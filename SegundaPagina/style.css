@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+...
+
+.esquerda, .direita {
+    width: 45%;
+}
+
+.esquerda {
+    text-align: left;
+}
+
+.direita img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #ffffff;
+    border-radius: 8px;
+}

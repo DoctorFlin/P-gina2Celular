@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Roboto', sans-serif; /* Font set to Roboto */
     background-color: #ffffff;
 }
 
@@ -26,20 +26,26 @@ main {
     text-align: left;
 }
 
+.blue-text {
+    color: blue; /* Text below "Light, Fast & Powerful" set to blue */
+    margin-bottom: 20px; /* Space added between this text and the icons */
+}
+
 .features {
     display: flex;
-    justify-content: space-between; /* Para espaçar uniformemente os ícones */
-    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Icons spaced evenly */
+    align-items: center; /* Center icons vertically */
+    margin-top: 20px; /* Adjust this to modify spacing between text and icons */
 }
 
 .feature {
-    text-align: center; /* Centraliza o conteúdo de cada feature */
-    width: 45%; /* Cada feature ocupa 45% da largura */
+    text-align: center; /* Centers each feature */
+    width: 45%; /* Feature occupies 45% of the width */
 }
 
 .icon {
-    width: 50px; /* Define o tamanho das imagens do ícone */
-    margin-bottom: 10px; /* Espaçamento abaixo dos ícones */
+    width: 50px; /* Icon size set */
+    margin-bottom: 10px; /* Space below icons */
 }
 
 .direita img {
@@ -49,23 +55,24 @@ main {
     border-radius: 8px;
 }
 
-/* Responsividade */
+/* Responsiveness */
 @media (max-width: 768px) {
     main {
         flex-direction: column;
     }
-    
+
     .esquerda, .direita {
         width: 100%;
     }
-    
+
     .features {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .feature {
         width: 100%;
         margin-bottom: 20px;
     }
 }
+

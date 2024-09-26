@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -26,9 +26,46 @@ main {
     text-align: left;
 }
 
+.features {
+    display: flex;
+    justify-content: space-between; /* Para espaçar uniformemente os ícones */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.feature {
+    text-align: center; /* Centraliza o conteúdo de cada feature */
+    width: 45%; /* Cada feature ocupa 45% da largura */
+}
+
+.icon {
+    width: 50px; /* Define o tamanho das imagens do ícone */
+    margin-bottom: 10px; /* Espaçamento abaixo dos ícones */
+}
+
 .direita img {
     max-width: 100%;
     height: auto;
     border: 3px solid #ffffff;
     border-radius: 8px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    
+    .esquerda, .direita {
+        width: 100%;
+    }
+    
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .feature {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }

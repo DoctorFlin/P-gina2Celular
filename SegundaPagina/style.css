@@ -5,14 +5,14 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif; /* Font set to Roboto */
+    font-family: 'Roboto', sans-serif;
     background-color: #ffffff;
 }
 
 main {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start; /* Alterado para alinhar o início de todos os textos */
     max-width: 1200px;
     margin: 50px auto;
     padding: 20px;
@@ -27,25 +27,26 @@ main {
 }
 
 .blue-text {
-    color: blue; /* Text below "Light, Fast & Powerful" set to blue */
-    margin-bottom: 20px; /* Space added between this text and the icons */
+    color: blue;
+    margin-bottom: 20px;
 }
 
 .features {
     display: flex;
-    justify-content: space-between; /* Icons spaced evenly */
-    align-items: center; /* Center icons vertically */
-    margin-top: 20px; /* Adjust this to modify spacing between text and icons */
+    justify-content: space-between;
+    align-items: flex-start; /* Alinha o início dos textos dos ícones */
+    margin-top: 20px;
 }
 
 .feature {
-    text-align: center; /* Centers each feature */
-    width: 45%; /* Feature occupies 45% of the width */
+    text-align: left; /* Alterado para alinhar o texto à esquerda */
+    width: 45%; /* Manter largura consistente */
+    padding: 10px; /* Adiciona espaçamento interno para organização */
 }
 
 .icon {
-    width: 50px; /* Icon size set */
-    margin-bottom: 10px; /* Space below icons */
+    width: 50px;
+    margin-bottom: 10px;
 }
 
 .direita img {
@@ -55,7 +56,7 @@ main {
     border-radius: 8px;
 }
 
-/* Responsiveness */
+/* Responsividade */
 @media (max-width: 768px) {
     main {
         flex-direction: column;
@@ -75,4 +76,3 @@ main {
         margin-bottom: 20px;
     }
 }
-
